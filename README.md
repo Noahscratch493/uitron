@@ -36,6 +36,13 @@ UITron is a simple, all-in-one Python GUI tool that lets you build fully structu
 
 ---
 
+### Important Note
+
+* **UITron itself requires a 64-bit Windows system to run.**
+* **However, the Electron apps created by UITron are 32-bit compatible and will run on both 32-bit and 64-bit Windows systems.**
+
+---
+
 ### What You Get
 
 * A fully packaged Electron app folder inside `/apps/[App Folder Name]/`
