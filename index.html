@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UITron - Create Electron Apps with Ease</title>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto&display=swap');
+
+    .font-inter {
+      font-family: 'Inter', sans-serif;
+    }
+    .font-roboto {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900">
+    <!-- Header -->
+    <header class="container mx-auto px-6 py-8">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
+            <i class="fas fa-bolt text-white text-xl"></i>
+          </div>
+          <h1 class="text-3xl font-bold text-white font-inter">UITron</h1>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#features" class="text-gray-300 hover:text-white transition-colors font-medium">
+            Features
+          </a>
+          <a href="#how-it-works" class="text-gray-300 hover:text-white transition-colors font-medium">
+            How It Works
+          </a>
+          <a href="#download" class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-2 rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all font-medium">
+            Download
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-16 text-center">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-5xl md:text-6xl font-bold text-white mb-6 font-inter">
+          Turn Your Website Into a
+          <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            Desktop App
+          </span>
+        </h2>
+        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto font-roboto">
+          UITron makes converting websites to desktop apps incredibly simple.
+          Import your website folder, set your app details, and get a portable
+          desktop application ready to publish.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="https://github.com/Noahscratch493/uitron/releases/download/v1.0.0/uitron.exe"
+            class="inline-flex items-center bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-cyan-600 hover:to-blue-700 transition-all transform hover:scale-105"
+            download
+            rel="noopener noreferrer"
+          >
+            <i class="fas fa-download mr-2"></i>
+            Download UITron
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="container mx-auto px-6 py-16">
+      <div class="text-center mb-16">
+        <h3 class="text-4xl font-bold text-white mb-4 font-inter">How It Works</h3>
+        <p class="text-xl text-gray-300 font-roboto">
+          Four simple steps to turn your website into a desktop app
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
+          <div class="w-14 h-14 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-folder-open text-white text-xl"></i>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3 font-inter">1. Import Website</h4>
+          <p class="text-gray-300 text-sm font-roboto">
+            Select your website folder containing HTML, CSS, JavaScript, and media files, including subfolders.
+          </p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
+          <div class="w-14 h-14 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-edit text-white text-xl"></i>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3 font-inter">2. Set App Name</h4>
+          <p class="text-gray-300 text-sm font-roboto">
+            Enter your application name that will become the app folder name.
+          </p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
+          <div class="w-14 h-14 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-file-signature text-white text-xl"></i>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3 font-inter">3. Name EXE File</h4>
+          <p class="text-gray-300 text-sm font-roboto">
+            Choose the filename for your executable application (e.g., MyApp.exe).
+          </p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
+          <div class="w-14 h-14 bg-gradient-to-r from-orange-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-rocket text-white text-xl"></i>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3 font-inter">4. Publish App</h4>
+          <p class="text-gray-300 text-sm font-roboto">
+            Get your portable app folder ready for distribution.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="container mx-auto px-6 py-16">
+      <div class="text-center mb-16">
+        <h3 class="text-4xl font-bold text-white mb-4 font-inter">Why Choose UITron?</h3>
+        <p class="text-xl text-gray-300 font-roboto">Powerful features designed for simplicity</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <i class="fas fa-mouse-pointer text-cyan-400 text-3xl mb-4"></i>
+          <h4 class="text-xl font-bold text-white mb-3 font-inter">GUI-Based Interface</h4>
+          <p class="text-gray-300 font-roboto">
+            No command line needed. Everything is done through an intuitive graphical interface.
+          </p>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <i class="fas fa-globe text-green-400 text-3xl mb-4"></i>
+          <h4 class="text-xl font-bold text-white mb-3 font-inter">Website to Desktop</h4>
+          <p class="text-gray-300 font-roboto">
+            Transform any website into a fully functional desktop application with ease.
+          </p>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <i class="fas fa-box text-purple-400 text-3xl mb-4"></i>
+          <h4 class="text-xl font-bold text-white mb-3 font-inter">Portable App Folder</h4>
+          <p class="text-gray-300 font-roboto">
+            Get a complete portable application folder ready for distribution and publishing.
+          </p>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <i class="fas fa-bolt text-yellow-400 text-3xl mb-4"></i>
+          <h4 class="text-xl font-bold text-white mb-3 font-inter">Lightning Fast</h4>
+          <p class="text-gray-300 font-roboto">
+            Convert your website to a desktop app in seconds, not hours. No complex setup required.
+          </p>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <i class="fab fa-windows text-blue-400 text-3xl mb-4"></i>
+          <h4 class="text-xl font-bold text-white mb-3 font-inter">Windows Ready</h4>
+          <p class="text-gray-300 font-roboto">
+            Generates native Windows executables that run smoothly on any Windows system.
+          </p>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <i class="fas fa-cogs text-gray-400 text-3xl mb-4"></i>
+          <h4 class="text-xl font-bold text-white mb-3 font-inter">Auto Configuration</h4>
+          <p class="text-gray-300 font-roboto">
+            UITron automatically handles all Electron configuration and packaging details for you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="download" class="container mx-auto px-6 py-16">
+      <div class="bg-gradient-to-r from-cyan-500/20 to-blue-600/20 backdrop-blur-sm rounded-2xl p-12 text-center border border-white/20">
+        <h3 class="text-4xl font-bold text-white mb-6 font-inter">Ready to Transform Your Website?</h3>
+        <p class="text-lg text-gray-300 mb-8 font-roboto max-w-2xl mx-auto">
+          Download UITron now and turn your web projects into powerful desktop apps effortlessly.
+        </p>
+        <a
+          href="https://github.com/Noahscratch493/uitron/releases/download/v1.0.0/uitron.exe"
+          class="inline-flex items-center bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-10 py-4 rounded-lg text-xl font-semibold hover:from-cyan-600 hover:to-blue-700 transition-all transform hover:scale-105"
+          download
+          rel="noopener noreferrer"
+        >
+          <i class="fas fa-download mr-3"></i>
+          Download UITron
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container mx-auto px-6 py-12 border-t border-white/10">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex items-center space-x-3 mb-4 md:mb-0">
+          <div class="w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
+            <i class="fas fa-bolt text-white"></i>
+          </div>
+          <span class="text-xl font-bold text-white font-inter">UITron</span>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+            <i class="fab fa-twitter text-xl"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+            <i class="fab fa-discord text-xl"></i>
+          </a>
+        </div>
+      </div>
+      <p class="text-center text-gray-400 mt-8 font-roboto text-sm">
+        © 2025 UITron — All rights reserved.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
